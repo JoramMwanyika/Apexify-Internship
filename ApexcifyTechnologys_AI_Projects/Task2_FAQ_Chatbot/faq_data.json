@@ -1,0 +1,17 @@
+[
+    {"question": "What is AI?", "answer": "Artificial Intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems."},
+    {"question": "How to reset my password?", "answer": "You can reset your password by clicking on the 'Forgot Password' link on the login page and following the instructions sent to your email."},
+    {"question": "What are your business hours?", "answer": "Our business hours are Monday through Friday, 9:00 AM to 5:00 PM EST."},
+    {"question": "Where are you located?", "answer": "Our main headquarters is located in San Francisco, California."},
+    {"question": "How can I contact customer support?", "answer": "You can reach customer support by emailing support@company.com or calling 1-800-555-0199."},
+    {"question": "Do you offer a free trial?", "answer": "Yes! We offer a 14-day free trial for all new users. You don't need a credit card to sign up."},
+    {"question": "What is machine learning?", "answer": "Machine learning is a subset of AI that involves training algorithms to learn from and make predictions based on data."},
+    {"question": "Can I cancel my subscription anytime?", "answer": "Yes, you can cancel your subscription at any time from your account settings page. There are no cancellation fees."},
+    {"question": "Do you have a mobile app?", "answer": "Yes, our mobile app is available for both iOS and Android devices in their respective app stores."},
+    {"question": "What payment methods do you accept?", "answer": "We accept all major credit cards, PayPal, and Apple Pay."},
+    {"question": "How long does shipping take?", "answer": "Standard shipping usually takes 3-5 business days. Express shipping options are available at checkout."},
+    {"question": "Is my data secure?", "answer": "Yes, we use industry-standard AES-256 encryption to ensure your data is safe and secure."},
+    {"question": "Can I get a refund?", "answer": "We offer a 30-day money-back guarantee. If you're not satisfied, contact support for a full refund."},
+    {"question": "Do you offer discounts for students?", "answer": "Yes, students can get a 50% discount by registering with a valid .edu email address."},
+    {"question": "What is NLP?", "answer": "Natural Language Processing (NLP) is a branch of AI that helps computers understand, interpret, and manipulate human language."}
+]

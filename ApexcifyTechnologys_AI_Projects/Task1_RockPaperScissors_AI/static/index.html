@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header / Scoreboard -->
+        <header class="scoreboard glass-panel">
+            <div class="score-card">
+                <h3>Player</h3>
+                <p id="user-score" class="score-number">0</p>
+            </div>
+            <div class="score-card center-card">
+                <h3>Draws</h3>
+                <p id="draw-score" class="score-number draws">0</p>
+            </div>
+            <div class="score-card">
+                <h3>AI Bot</h3>
+                <p id="comp-score" class="score-number ai">0</p>
+            </div>
+        </header>
+
+        <!-- Main Battle Arena -->
+        <main class="battle-arena">
+            <div class="hand-container player-hand-container">
+                <img src="images/rock.png" alt="Player Hand" id="player-hand" class="hand player-hand">
+            </div>
+            
+            <div class="vs-badge glass-panel">
+                <h1 id="result-text">VS</h1>
+            </div>
+
+            <div class="hand-container comp-hand-container">
+                <img src="images/rock.png" alt="Computer Hand" id="comp-hand" class="hand comp-hand">
+            </div>
+        </main>
+
+        <!-- Controls -->
+        <footer class="controls">
+            <h2 class="control-title">Make Your Move</h2>
+            <div class="buttons">
+                <button class="choice-btn" data-choice="rock">
+                    <img src="images/rock.png" alt="Rock">
+                    <span>Rock</span>
+                </button>
+                <button class="choice-btn" data-choice="paper">
+                    <img src="images/paper.png" alt="Paper">
+                    <span>Paper</span>
+                </button>
+                <button class="choice-btn" data-choice="scissors">
+                    <img src="images/scissors.png" alt="Scissors">
+                    <span>Scissors</span>
+                </button>
+            </div>
+            <button id="reset-btn" class="reset-btn glass-panel">Reset Game</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
