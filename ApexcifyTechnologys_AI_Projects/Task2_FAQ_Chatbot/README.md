@@ -1,12 +1,13 @@
-# Task 2: FAQ Chatbot (NLP-Based)
+# Task 2: FAQ Chatbot (IT Assistant Web UI)
 
-An intelligent Command Line Interface (CLI) chatbot built with Python. This chatbot uses Natural Language Processing (NLP) techniques to understand user queries and match them to the most relevant frequently asked questions (FAQs).
+An intelligent, modern Web Chatbot built with Python, NLP (NLTK & Scikit-Learn), and Flask.
 
-## How it works
-1. **Preprocessing:** Uses `nltk` to convert text to lowercase, remove punctuation, tokenize words, and remove stopwords (e.g., "the", "is").
-2. **Vectorization:** Uses `scikit-learn`'s `TfidfVectorizer` to convert text strings into numerical vectors (TF-IDF).
-3. **Similarity Matching:** Computes the **Cosine Similarity** between the vectorized user query and the vectorized FAQ dataset to find the best match.
-4. **Response:** Returns the answer of the best-matched question.
+This chatbot serves as an IT Assistant. It uses Natural Language Processing to detect the intent of your message (e.g., Greeting, Farewell, FAQ Query) and then uses TF-IDF Vectorization and Cosine Similarity to find the best answer to your question from a custom JSON database.
+
+## Features
+- **Intention Detection Layer**: Understands greetings, farewells, and gratitude before checking the FAQ database.
+- **Modern Messenger UI**: A premium, responsive web interface built with pure CSS and JS, featuring typing indicators and intent badges.
+- **NLP Preprocessing**: Lowercasing, punctuation removal, tokenization, and stopword filtering.
 
 ## Setup Instructions
 
@@ -16,11 +17,11 @@ An intelligent Command Line Interface (CLI) chatbot built with Python. This chat
    ```bash
    pip install -r requirements.txt
    ```
-4. Run the chatbot:
+4. Run the Flask Web Server:
    ```bash
-   python chatbot.py
+   python app.py
    ```
-   *(Note: On its first run, it may take a few seconds to verify/download NLTK data like tokenizers and stopwords.)*
+5. Open your web browser and go to: **http://127.0.0.1:5000**
 
 ## Customization
-You can easily add more FAQs by editing the `faq_data.json` file. Ensure it remains valid JSON format.
+You can add more FAQs by editing the `faq_data.json` file. The backend will automatically train on the new data the next time you start the server!

@@ -1,17 +1,140 @@
-[
-    {"question": "What is AI?", "answer": "Artificial Intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems."},
-    {"question": "How to reset my password?", "answer": "You can reset your password by clicking on the 'Forgot Password' link on the login page and following the instructions sent to your email."},
-    {"question": "What are your business hours?", "answer": "Our business hours are Monday through Friday, 9:00 AM to 5:00 PM EST."},
-    {"question": "Where are you located?", "answer": "Our main headquarters is located in San Francisco, California."},
-    {"question": "How can I contact customer support?", "answer": "You can reach customer support by emailing support@company.com or calling 1-800-555-0199."},
-    {"question": "Do you offer a free trial?", "answer": "Yes! We offer a 14-day free trial for all new users. You don't need a credit card to sign up."},
-    {"question": "What is machine learning?", "answer": "Machine learning is a subset of AI that involves training algorithms to learn from and make predictions based on data."},
-    {"question": "Can I cancel my subscription anytime?", "answer": "Yes, you can cancel your subscription at any time from your account settings page. There are no cancellation fees."},
-    {"question": "Do you have a mobile app?", "answer": "Yes, our mobile app is available for both iOS and Android devices in their respective app stores."},
-    {"question": "What payment methods do you accept?", "answer": "We accept all major credit cards, PayPal, and Apple Pay."},
-    {"question": "How long does shipping take?", "answer": "Standard shipping usually takes 3-5 business days. Express shipping options are available at checkout."},
-    {"question": "Is my data secure?", "answer": "Yes, we use industry-standard AES-256 encryption to ensure your data is safe and secure."},
-    {"question": "Can I get a refund?", "answer": "We offer a 30-day money-back guarantee. If you're not satisfied, contact support for a full refund."},
-    {"question": "Do you offer discounts for students?", "answer": "Yes, students can get a 50% discount by registering with a valid .edu email address."},
-    {"question": "What is NLP?", "answer": "Natural Language Processing (NLP) is a branch of AI that helps computers understand, interpret, and manipulate human language."}
-]
+{
+    "faqs": [
+        {
+            "question": "hello",
+            "answer": "Hi there! How can I help you today?"
+        },
+        {
+            "question": "hi",
+            "answer": "Hello! What can I assist you with?"
+        },
+        {
+            "question": "hey",
+            "answer": "Hey! Need help with something?"
+        },
+        {
+            "question": "good morning",
+            "answer": "Good morning! How can I assist you today?"
+        },
+        {
+            "question": "good afternoon",
+            "answer": "Good afternoon! How can I help you?"
+        },
+        {
+            "question": "good evening",
+            "answer": "Good evening! What can I do for you?"
+        },
+        {
+            "question": "how are you",
+            "answer": "I'm just a bot, but I'm doing great! How can I help you?"
+        },
+        {
+            "question": "who are you",
+            "answer": "I am an AI-powered assistant designed to help answer your questions and solve basic tech issues."
+        },
+        {
+            "question": "what can you do",
+            "answer": "I can help answer common technical questions, troubleshoot issues, and guide you through basic tasks."
+        },
+        {
+            "question": "thank you",
+            "answer": "You're welcome! Let me know if you need anything else."
+        },
+        {
+            "question": "thanks",
+            "answer": "Happy to help! 😊"
+        },
+        {
+            "question": "bye",
+            "answer": "Goodbye! Have a great day!"
+        },
+        {
+            "question": "goodbye",
+            "answer": "See you later! Feel free to come back anytime."
+        },
+        {
+            "question": "see you",
+            "answer": "Take care! I'm here whenever you need help."
+        },
+        {
+            "question": "How do I reset my laptop password?",
+            "answer": "You can reset your password by clicking 'Forgot Password' on the login screen and following the recovery steps."
+        },
+        {
+            "question": "Why is my laptop running slow?",
+            "answer": "Your laptop may be slow due to too many background applications, low storage space, or insufficient RAM."
+        },
+        {
+            "question": "How can I improve my laptop performance?",
+            "answer": "You can improve performance by closing unused apps, upgrading RAM, clearing storage, and disabling startup programs."
+        },
+        {
+            "question": "What should I do if my laptop won't turn on?",
+            "answer": "Check the power connection, try a different charger, and hold the power button for 10 seconds to reset."
+        },
+        {
+            "question": "How do I connect my laptop to WiFi?",
+            "answer": "Go to network settings, select your WiFi network, and enter the password to connect."
+        },
+        {
+            "question": "Why is my internet connection slow?",
+            "answer": "Slow internet may be caused by network congestion, weak signal, or issues with your service provider."
+        },
+        {
+            "question": "How do I install new software?",
+            "answer": "Download the software from the official website and run the installer, then follow the setup instructions."
+        },
+        {
+            "question": "How can I update my operating system?",
+            "answer": "Go to system settings, check for updates, and install any available updates."
+        },
+        {
+            "question": "What is antivirus software and do I need it?",
+            "answer": "Antivirus software protects your system from malware and viruses. It is highly recommended to keep your device secure."
+        },
+        {
+            "question": "How do I remove a virus from my laptop?",
+            "answer": "Run a full system scan using antivirus software and remove any detected threats."
+        },
+        {
+            "question": "Why is my laptop overheating?",
+            "answer": "Overheating can be caused by dust buildup, blocked vents, or heavy usage. Clean the vents and ensure proper ventilation."
+        },
+        {
+            "question": "How do I free up storage space?",
+            "answer": "Delete unnecessary files, uninstall unused programs, and move files to external storage or cloud services."
+        },
+        {
+            "question": "Can I upgrade my laptop RAM?",
+            "answer": "Yes, if your laptop supports it. Check your model specifications before purchasing compatible RAM."
+        },
+        {
+            "question": "How do I take a screenshot on my laptop?",
+            "answer": "Press the 'Print Screen' button or use 'Windows + Shift + S' to capture a screenshot."
+        },
+        {
+            "question": "Why is my screen flickering?",
+            "answer": "Screen flickering may be due to outdated drivers or hardware issues. Update your display drivers first."
+        },
+        {
+            "question": "How do I connect a printer to my laptop?",
+            "answer": "Connect via USB or WiFi, then install the printer drivers and add the printer in settings."
+        },
+        {
+            "question": "What should I do if my laptop battery drains quickly?",
+            "answer": "Reduce screen brightness, close background apps, and check battery health in system settings."
+        },
+        {
+            "question": "How do I back up my data?",
+            "answer": "Use cloud storage or an external drive to regularly save copies of your important files."
+        },
+        {
+            "question": "Why can't I hear sound from my laptop?",
+            "answer": "Check volume settings, ensure the correct output device is selected, and update audio drivers."
+        },
+        {
+            "question": "How do I factory reset my laptop?",
+            "answer": "Go to system settings, select recovery options, and choose 'Reset this PC' to restore factory settings."
+        }
+    ]
+}
