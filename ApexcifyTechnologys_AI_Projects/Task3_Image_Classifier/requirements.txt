@@ -1,3 +1,5 @@
 opencv-python==4.9.0.80
 deepface==0.0.84
-tf-keras==2.15.0
+tf-keras~=2.16.0
+Flask==3.0.3
+Flask-Cors==4.0.0

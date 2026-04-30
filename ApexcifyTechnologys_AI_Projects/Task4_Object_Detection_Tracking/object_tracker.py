@@ -1,5 +1,15 @@
 import cv2
 import time
+import torch
+# PyTorch 2.6+ changed default weights_only=True, which breaks ultralytics 8.2.2.
+# We monkeypatch torch.load to default to False before importing ultralytics.
+original_load = torch.load
+def patched_load(*args, **kwargs):
+    kwargs.setdefault('weights_only', False)
+    return original_load(*args, **kwargs)
+torch.load = patched_load
+
+import ultralytics
 from ultralytics import YOLO
 
 def run_tracker():
@@ -7,7 +17,7 @@ def run_tracker():
     print("Loading YOLOv8 model (this may take a moment to download the nano model on first run)...")
     
     # Load the YOLOv8 nano model (fastest, great for real-time webcam)
-    model = YOLO("yolov8n.pt") 
+    model = YOLO("yolov8n-oiv7.pt") 
     
     # Initialize the webcam
     cap = cv2.VideoCapture(0)

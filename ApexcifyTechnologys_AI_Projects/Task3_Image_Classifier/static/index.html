@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Image Classifier</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-face-smile"></i>
+                <h1>Emotion Classifier</h1>
+            </div>
+            <p>Real-time face detection and emotion recognition</p>
+        </header>
+
+        <main>
+            <div class="video-container">
+                <video id="webcam" autoplay playsinline></video>
+                <canvas id="overlay"></canvas>
+                <div class="status-indicator" id="status-indicator">
+                    <span class="dot red"></span>
+                    <span class="text">Camera Off</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn" class="btn primary-btn"><i class="fa-solid fa-video"></i> Start Camera</button>
+                <button id="stop-btn" class="btn secondary-btn" disabled><i class="fa-solid fa-video-slash"></i> Stop Camera</button>
+            </div>
+            
+            <div class="results-panel">
+                <h3>Current Emotion</h3>
+                <div class="emotion-display" id="emotion-display">
+                    <i class="fa-regular fa-face-meh-blank"></i>
+                    <span>Waiting for face...</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

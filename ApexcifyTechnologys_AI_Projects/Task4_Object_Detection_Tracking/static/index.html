@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLOv8 Object Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-crosshairs"></i>
+                <h1>Object Tracking System</h1>
+            </div>
+            <p>Powered by YOLOv8 & BoT-SORT</p>
+        </header>
+
+        <main>
+            <div class="stats-bar">
+                <div class="stat-card">
+                    <i class="fa-solid fa-cubes"></i>
+                    <div class="stat-info">
+                        <span class="stat-label">Active Objects</span>
+                        <span class="stat-value" id="object-count">0</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <div class="stat-info">
+                        <span class="stat-label">FPS</span>
+                        <span class="stat-value" id="fps-display">0.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display-area">
+                <video id="webcam" autoplay playsinline style="display: none;"></video>
+                <div class="image-container">
+                    <img id="annotated-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Video Feed" />
+                    <div class="status-overlay" id="status-overlay">
+                        <i class="fa-solid fa-video-slash"></i>
+                        <span>System Offline</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn" class="btn primary-btn"><i class="fa-solid fa-power-off"></i> Initialize Feed</button>
+                <button id="stop-btn" class="btn danger-btn" disabled><i class="fa-solid fa-ban"></i> Terminate</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

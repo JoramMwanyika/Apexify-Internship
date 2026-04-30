@@ -1,3 +1,7 @@
+import os
+# Force TensorFlow to use legacy Keras 2, which DeepFace requires in TF 2.16+
+os.environ['TF_USE_LEGACY_KERAS'] = '1'
+
 import cv2
 from deepface import DeepFace
 import sys
