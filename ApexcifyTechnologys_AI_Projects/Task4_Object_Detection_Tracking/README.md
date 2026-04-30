@@ -1,15 +1,15 @@
-# Task 4: Object Detection & Tracking
+# Task 4: Object Detection & Tracking (Web UI)
 
 A real-time Object Detection and Tracking system utilizing your webcam. 
 
-This project uses **YOLOv8** (via the `ultralytics` package) for state-of-the-art object detection, and employs its built-in advanced tracking algorithm (**BoT-SORT**) to assign persistent IDs to objects as they move across frames.
+This project uses **YOLOv8** (via the `ultralytics` package) for state-of-the-art object detection, and employs its built-in advanced tracking algorithm (**BoT-SORT**) to assign persistent IDs to objects as they move across frames. It has been upgraded with the **Open Images V7** model (`yolov8n-oiv7.pt`), expanding its detection vocabulary to **600 distinct object classes**.
 
 ## Features
-- **Object Detection:** Identifies multiple objects in real-time (people, chairs, cellphones, cups, etc.).
+- **Object Detection:** Identifies 600 multiple objects in real-time (people, specific sports balls, toys, tools, etc.).
 - **Object Tracking:** Assigns a unique ID to each detected object and maintains it across continuous frames.
-- **Bonus Implementations:**
-  - Real-time FPS (Frames Per Second) counter.
-  - Active Object Count display.
+- **Cyberpunk Web Interface:** A highly styled web UI featuring a scanning laser animation and a dedicated heads-up display.
+- **Real-time Stats:** Live FPS (Frames Per Second) counter and Active Object Count display dynamically.
+- **REST API Backend**: Flask serves the frontend and handles the YOLOv8 frame processing over base64.
 
 ## Setup Instructions
 
@@ -19,10 +19,9 @@ This project uses **YOLOv8** (via the `ultralytics` package) for state-of-the-ar
    ```bash
    pip install -r requirements.txt
    ```
-4. Run the tracker:
+4. Run the tracker web server:
    ```bash
-   python object_tracker.py
+   python app.py
    ```
-   *(Note: The first time you run the script, it will automatically download the `yolov8n.pt` pre-trained model weights, which is about 6MB).*
-5. A window will open showing your webcam feed with tracked objects, bounding boxes, labels, and tracking IDs!
-6. Press the **'q'** key while focused on the webcam window to quit the application.
+5. Open your web browser and go to: **http://127.0.0.1:5004**
+6. Click **Initialize Feed**, grant webcam permissions, and point your camera at different objects!
